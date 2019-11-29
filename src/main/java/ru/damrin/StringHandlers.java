@@ -33,20 +33,17 @@ public class StringHandlers {
   }
 
 
-
-
   public void handler(String line) {
     this.isLeftRoman = false;
     this.isRightRoman = false;
 
     String[] splitString = line.split(" ");
 
-
     try {
       this.argumentA = Integer.parseInt(splitString[0]);
     } catch (NumberFormatException ex) {
-      if(preCheck.checkIf(splitString[0])==true){
-        if (preCheck.getToArabic()>=1 && preCheck.getToArabic()<=10){
+      if (preCheck.checkIf(splitString[0]) == true) {
+        if (preCheck.getToArabic() >= 1 && preCheck.getToArabic() <= 10) {
           this.argumentA = preCheck.getToArabic();
           isLeftRoman = true;
         } else {
@@ -62,8 +59,8 @@ public class StringHandlers {
     try {
       this.argumentB = Integer.parseInt(splitString[2]);
     } catch (NumberFormatException ex) {
-      if(preCheck.checkIf(splitString[2])==true){
-        if (preCheck.getToArabic()>=1 && preCheck.getToArabic()<=10){
+      if (preCheck.checkIf(splitString[2]) == true) {
+        if (preCheck.getToArabic() >= 1 && preCheck.getToArabic() <= 10) {
           this.argumentB = preCheck.getToArabic();
           isRightRoman = true;
         } else {

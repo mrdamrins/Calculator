@@ -17,6 +17,7 @@ public class RomanMetric {
         .replace("DD", "M")
         .replace("DCD", "CM");
   }
+
   public Integer toArabic(String roman) {
     return roman.replace("CM", "DCD")
         .replace("M", "DD")

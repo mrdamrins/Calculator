@@ -21,12 +21,11 @@ public class App {
 
     calc.calculation(calc.getA(), calc.getB(), calc.getArithmeticAction());
 
-    if (stringBox.isRightRoman()==true && stringBox.isLeftRoman()==true){
+    if (stringBox.isRightRoman() == true && stringBox.isLeftRoman() == true) {
       System.out.println(roman.toRoman(calc.getConclusion()));
-    }else if(stringBox.isRightRoman()==false && stringBox.isLeftRoman()==false) {
+    } else if (stringBox.isRightRoman() == false && stringBox.isLeftRoman() == false) {
       System.out.println(calc.getConclusion());
-    } else
-    {
+    } else {
       System.out.println(err.getIncorrectFormat());
     }
   }
