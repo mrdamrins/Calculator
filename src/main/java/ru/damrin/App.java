@@ -23,7 +23,7 @@ public class App {
 
     if (stringBox.isRightRoman() == true && stringBox.isLeftRoman() == true) {
       System.out.println(roman.toRoman(calc.getConclusion()));
-    } else if (stringBox.isRightRoman() == false && stringBox.isLeftRoman() == false) {
+    } else if (stringBox.isLeftRoman() == false && stringBox.isRightRoman() == false) {
       System.out.println(calc.getConclusion());
     } else {
       System.out.println(err.getIncorrectFormat());
