@@ -13,7 +13,6 @@ public class App {
     Errors err = new Errors();
 
     Scanner scan = new Scanner(System.in);
-
     stringBox.handler(scan.nextLine());
 
     calc.setA(stringBox.getArgumentA());
