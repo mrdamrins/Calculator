@@ -58,7 +58,7 @@ public class MathOperations {
     } else if (arithmeticAction.equals("/")) {
       conclusion = a / b;
     } else {
-      System.out.println("Введена некорректная операция");
+      System.out.println(err.getIncorrectFormat());
     }
     return conclusion;
   }
